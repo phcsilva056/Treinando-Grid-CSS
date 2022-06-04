@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+}
+
+.fundo {
+    width: 900px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 50px 800px 50px;
+    grid-template-rows: 50px 400px 50px;
+    box-shadow: 0px 12px 10px -10px black;
+    justify-content: center;
+}
+
+.meio {
+    display: grid;
+    grid-template-columns: repeat(40, 20px);
+    grid-template-rows: repeat(20, 20px);
+    grid-area: 2/2/3/3;
+    background-color: aqua;
+}
+
+.sol {
+    background-color: yellow;
+    box-shadow: 8px 8px 40px goldenrod inset;
+    grid-area: 2/36/6/40;
+    border-radius: 100%;
+}
+
+.arvore-tronco {
+    background-color: #411b00;
+    grid-area: 10/14/21/19;
+}
+
+.folhas1 {
+    background-color: #015001;
+    grid-area: 4/13/10/20;
+}
+
+.folhas2 {
+    background-color: darkgreen;
+    grid-area: 7/7/13/15;
+    display: grid;
+    grid-template-rows: repeat(4, 20px);
+    grid-template-columns: repeat(7, 20px);
+}
+
+.folhas2-1 {
+    background-color: aqua;
+    grid-area: 2/1/2/2;
+}
+
+.folhas2-2 {
+    background-color: aqua;
+    grid-area: 1/1/2/4;
+    display: grid;
+    grid-template-columns: repeat(8, 20px);
+    grid-template-rows: repeat(6, 20px);
+}
+
+.brotinho {
+    grid-area: 4/5/5/6;
+    grid-template-columns: repeat(10, 2px);
+    grid-template-rows: repeat(10, 2px);
+    display: grid;
+}
+
+.brotinho-1 {
+    grid-area: 7/6/11/7;
+    background-color: #411b00;
+}
+
+.brotinho-2 {
+    grid-area: 5/7/8/8;
+    background-color: #411b00;
+}
+
+.fruta {
+    grid-area: 5/5/6/6;
+    background-color: red;
+    border-radius: 40%;
+}
+
+.folhas3 {
+    background-color: darkgreen;
+    grid-area: 8/17/14/23;
+    display: grid;
+    grid-template-rows: repeat(7, 20px);
+    grid-template-columns: repeat(7, 20px);
+}
+
+.folhas3-1 {
+    background-color: #411b00;
+    grid-area: 4/1/7/2;
+}
+
+.folhas3-2 {
+    background-color: #411b00;
+    grid-area: 6/2/7/3;
+}
+
+.folhas3-3 {
+    background-color: aqua;
+    grid-area: 1/6/3/7;
+}
+
+.arbusto {
+    grid-area: 18/18/26/26;
+    background-color: darkgreen;
+}
+
+.newton {
+    background-color: #c7a275;
+    grid-area: 16/11/21/15;
+    display: grid;
+    grid-template-columns: repeat(4, 20px);
+    grid-template-rows: repeat(5, 20px);
+}
+
+.cabelo {
+    background-color: #afaeae;
+    grid-area: 1/1/2/5;
+}
+
+.olho-esquerdo {
+    grid-area: 2/2/3/3;
+    display: grid;
+    grid-template-columns: repeat(10, 2px);
+    grid-template-rows: repeat(10, 2px);
+}
+
+.sombrancelha-esquerda {
+    background-color: black;
+    grid-area: 5/1/6/6;
+    transform: rotate(16deg);
+}
+
+.olho-1 {
+    background-color: black;
+    grid-area: 7/1/11/6;
+}
+
+.olho-direito {
+    grid-area: 2/3/3/4;
+    display: grid;
+    grid-template-columns: repeat(10, 2px);
+    grid-template-rows: repeat(10, 2px);
+}
+
+.olho-2 {
+    background-color: black;
+    grid-area: 8/1/11/6;
+}
+
+.sombrancelha-direita {
+    background-color: black;
+    grid-area: 6/1/7/6;
+    transform: rotate(357deg);
+}
+
+.roupa {
+    background-color: blue;
+    grid-area: 4/1/6/5;
+    display: grid;
+    grid-template-columns: repeat(40, 2px);
+    grid-template-rows: repeat(20, 2px);
+}
+
+.detalhe-roupa1 {
+    background-color: #c7a275;
+    grid-area: 1/15/3/28;
+}
+
+.detalhe-roupa2 {
+    background-color: #000085;
+    grid-area: 3/20/20/23;
+}
+
+.detalhe-roupa3 {
+    background-color: #000085;
+    grid-area: 3/15/5/28;
+}
+
+.moldura1 {
+    grid-area: 1/1/2/4;
+    border-left: saddlebrown solid;
+    border-right: saddlebrown solid;
+    background-image: linear-gradient(saddlebrown, peru, saddlebrown);
+}
+
+.moldura2 {
+    grid-area: 1/1/4/2;
+    background-image: linear-gradient(-90deg, saddlebrown, peru, saddlebrown);
+}
+
+.moldura3 {
+    grid-area: 3/1/4/4;
+    border-left: saddlebrown solid;
+    border-right: saddlebrown solid;
+    background-image: linear-gradient(saddlebrown, peru, saddlebrown);
+}
+
+.moldura4 {
+    grid-area: 1/3/4/4;
+    background-image: linear-gradient(90deg, saddlebrown, peru, saddlebrown);
+}
